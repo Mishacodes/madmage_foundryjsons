@@ -1,0 +1,623 @@
+https://pastebin.com/W6msjx8v{
+	"_meta": {
+		"sources": [
+			{
+				"json": "GrimHollowCarrionRaven",
+				"abbreviation": "GH:CR",
+				"full": "Grim Hollow: Carrion Raven Barbarian",
+				"authors": [
+					"Ghostfire Gaming"
+				],
+				"convertedBy": [
+					"Misha"
+				],
+				"version": "1.0",
+				"url": "https://marketplace.dndbeyond.com/category/SRC-00150",
+				"partnered": true,
+				"color": "80a374"
+			}
+		],
+		"optionalFeatureTypes": {
+			"MV:CR": "Maneuver: Carrion Raven"
+		},
+        "edition": "classic",
+		"dateAdded": 1720212483,
+		"dateLastModified": 1739743040
+	},
+	"subclass": [
+	
+		{
+			"name": "Path of the Carrion Raven",
+			"shortName": "Carrion Raven",
+			"source": "GrimHollowCarrionRaven",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"additionalSpells": [
+				{
+					"innate": {
+						"6": {
+							"ritual": [
+								"speak with animals"
+							]
+						}
+					}
+				}
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "Maneuvers",
+					"featureType": [
+						"MV:CR"
+					],
+					"progression": {
+						"3": 3,
+						"6": 4,
+						"10": 5,
+						"14": 6
+					}
+				}
+			],
+			"subclassTableGroups": [
+				{
+					"subclasses": [
+						{
+							"name": "Carrion Raven",
+							"source": "GrimHollowCarrionRaven"
+						}
+					],
+					"colLabels": [
+						"Barbarian Level",
+						"Maneuver Points",
+						"{@filter Maneuvers Known|optionalfeatures|feature type=MV:CR|source=GrimHollowCarrionRaven}"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							6,
+							3
+						],
+						[
+							4,
+							8,
+							3
+						],
+						[
+							5,
+							10,
+							3
+						],
+						[
+							6,
+							12,
+							4
+						],
+						[
+							7,
+							14,
+							4
+						],
+						[
+							8,
+							16,
+							4
+						],
+						[
+							9,
+							18,
+							4
+						],
+						[
+							10,
+							20,
+							5
+						],
+						[
+							11,
+							22,
+							5
+						],
+						[
+							12,
+							24,
+							5
+						],
+						[
+							13,
+							26,
+							5
+						],
+						[
+							14,
+							28,
+							5
+						],
+						[
+							15,
+							30,
+							6
+						],
+						[
+							16,
+							32,
+							6
+						],
+						[
+							17,
+							34,
+							6
+						],
+						[
+							18,
+							36,
+							6
+						],
+						[
+							19,
+							38,
+							6
+						],
+						[
+							20,
+							40,
+							6
+						]
+					]
+				}
+			],
+			"subclassFeatures": [
+				"Path of the Carrion Raven|Barbarian||Carrion Raven|GrimHollowCarrionRaven|3",
+				"Maneuver Points|Barbarian||Carrion Raven|GrimHollowCarrionRaven|3",
+				"Raven's Spirit|Barbarian||Carrion Raven|GrimHollowCarrionRaven|6",
+				"Ferocious Rage|Barbarian||Carrion Raven|GrimHollowCarrionRaven|10",
+				"Violent Hunger|Barbarian||Carrion Raven|GrimHollowCarrionRaven|14"
+			],
+			"hasFluffImages": true
+		}
+	],
+	"subclassFluff": [
+		{
+			"name": "Path of the Carrion Raven",
+			"shortName": "Carrion Raven",
+			"source": "GrimHollowCarrionRaven",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_murderofcrows.jpg"
+					}
+				}
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Path of the Carrion Raven",
+			"source": "GrimHollowCarrionRaven",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Carrion Raven",
+			"subclassSource": "GrimHollowCarrionRaven",
+			"level": 3,
+			"entries": [
+				"Barbarians who walk the Path of the Carrion Raven wield the warrior spirit of a blood-soaked raven blessed with the gift of speech. This carrion bird aided Kentigern on his quest to slay Gormadraug so that the raven might feast on the heart of the Prismatic Wyrm. This path is popular among wanderers of the inhospitable wastes of Valika—yet most remain mistrusted outsiders, even among the hardened Valikan clans. They don't mind.",
+				"Barbarians who embody the Saga of the Carrion Raven prefer the company of beasts. This close proximity to animals grants them deeper insights into the raven's search for power and survival at any cost. To them, it's a high compliment. To other Valikans, it marks them as outsiders to be feared and kept away at spearpoint.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Martial Maneuvers|Barbarian||Carrion Raven|GrimHollowCarrionRaven|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Carrion Raven Maneuvers|Barbarian||Carrion Raven|GrimHollowCarrionRaven|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Feral Celerity|Barbarian||Carrion Raven|GrimHollowCarrionRaven|3"
+				}
+			]
+		},
+		{
+			"name": "Carrion Raven Maneuvers",
+			"source": "GrimHollowCarrionRaven",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Carrion Raven",
+			"subclassSource": "GrimHollowCarrionRaven",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"The Saga of the Carrion Raven speaks of a talking raven with the power to transform into any animal he had eaten to wield their powers. His tale intersects with Kentigern and his companions on their journey to slay the Great Prismatic Wyrm Gormadraug, where the raven appeared, offering to help in exchange for the chance to eat the Prismatic Wyrm's heart. As the story goes, the raven taught the heroes how to fight with the ferocity of the north's fiercest predators and fly with the speed of their fastest birds.",
+				"Warriors who practice the Saga of the Carrion Raven trust in their instincts, and embody the cunning, resilience, and power of the natural world. Masters of this saga learn to knit their flesh, take flight, and even adopt the shape of the beasts they've so long emulated.",
+				"These maneuvers can be used by anyone who studies the Carrion Raven saga."
+				
+			]
+		},
+		{
+			"name": "Feral Celerity",
+			"source": "GrimHollowCarrionRaven",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Carrion Raven",
+			"subclassSource": "GrimHollowCarrionRaven",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"Your rage grants you animalistic speed of action. As part of the bonus action to enter a rage, you can make one weapon attack. Additionally, you gain the ability to concentrate on maneuvers, even while you are raging. You still cannot concentrate on spells while raging."
+			]
+		},
+		{
+			"name": "Martial Maneuvers",
+			"source": "GrimHollowCarrionRaven",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Carrion Raven",
+			"subclassSource": "GrimHollowCarrionRaven",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"You have trained in the manner of heroes from the old sagas, and now you can perform certain martial maneuvers. A maneuver requires you to spend maneuver points to use it.",
+				"You know three maneuvers of your choice from the list below. You learn an additional maneuver at 6th, 10th, and 14th level. Each time you learn a maneuver, you can also replace one maneuver you know with a different one you can learn.",
+				{
+					"type": "entries",
+					"name": "Using Maneuvers",
+					"entries": [
+						"You can use one maneuver during each turn. Some maneuvers require {@status concentration}, as if {@status concentration||concentrating} on a spell, or certain conditions to use. Some maneuvers will require your target to make a saving throw to resist the maneuver's effects.",
+						{
+							"type": "abilityDc",
+							"name": "Martial Maneuver",
+							"attributes": [
+								"con"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Maneuver Points",
+			"source": "GrimHollowCarrionRaven",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Carrion Raven",
+			"subclassSource": "GrimHollowCarrionRaven",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"Channeling the heroes from the old sagas is no easy task, and your pool of maneuver points represents the limit of your abilities to do so. Your barbarian class level determines the number of maneuver points you have, as shown in the Maneuver Points column in the Path of the Carrion Raven table below. You regain all spent maneuver points at the end of a long rest."
+			],
+			"foundrySystem": {
+				"uses": {
+					"per": "lr",
+					"max": "2*@classes.barbarian.levels",
+					"value": "0"
+				}
+			}
+		},
+		{
+			"name": "Raven's Spirit",
+			"source": "GrimHollowCarrionRaven",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Carrion Raven",
+			"subclassSource": "GrimHollowCarrionRaven",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"You gain proficiency in the {@skill Animal Handling} skill. If you are already proficient in it, you gain proficiency in your choice of one the following skills instead: {@skill Athletics}, {@skill Nature}, or {@skill Survival}.",
+				"In addition, you can cast {@spell speak with animals} as a ritual."
+			]
+		},
+		{
+			"name": "Ferocious Rage",
+			"source": "GrimHollowCarrionRaven",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Carrion Raven",
+			"subclassSource": "GrimHollowCarrionRaven",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"When you enter your rage, creatures of your choice within 10 feet that can see you must succeed on a Wisdom saving throw against your Martial Maneuvers save DC. On a failed saving throw, the creature is {@condition frightened} of you until the end of its next turn."
+			]
+		},
+		{
+			"name": "Violent Hunger",
+			"source": "GrimHollowCarrionRaven",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Carrion Raven",
+			"subclassSource": "GrimHollowCarrionRaven",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"When you deal damage to a creature with a weapon attack and roll the maximum result of one of the damage dice, you can spend 1 maneuver point to roll another die of the same type and add its result to the damage dealt by the attack. You can do this once per attack."
+			]
+		}
+	],
+    "foundryOptionalfeature": [
+		{
+			"name": "Woolly Beast's Hide",
+			"source": "GrimHollowCarrionRaven",
+			"entries": [
+				"When you are hit by an attack, you can use your reaction and spend 2 or more maneuver points to use the resilient parts of your body to shield your vulnerabilities from harmful damage. When you use this maneuver, roll {@dice 1d6} for every 2 points you spend to use this maneuver and reduce the damage from an attack by the result. After taking any remaining damage, you also gain temporary hit points equal to the result of the roll."
+			],
+			"activities": [
+				{
+					"activation": {
+						"type": "reaction"
+					},
+					"range": {
+						"units": "self"
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"type": "utility",
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"target": {
+									"consumes": {
+										"name": "Maneuver Points"
+									}
+								},
+								"value": 2,
+								"scaling": {
+									"mode": "amount"
+								}
+							}
+						],
+						"scaling": {
+							"allowed": true,
+							"max": "2*@classes.barbarian.levels"
+						}
+					}
+				}
+			]
+		}
+    ],
+	"optionalfeature": [
+		{
+			"name": "Apex Dominance",
+			"source": "GrimHollowCarrionRaven",
+			"featureType": [
+				"MV:CR"
+			],
+			"consumes": {
+				"name": "Maneuver Point",
+				"amount": 5
+			},
+			"entries": [
+				"You can use an action and spend 5 maneuver points to attempt to sunder your enemy with excessive force. When you do, a creature within your reach must succeed on a Strength saving throw. If the creature is currently {@condition grappled} by you, it has disadvantage on this saving throw.",
+				"On a failed saving throw, the creature takes {@damage 6d10} force damage. On a successful save, the target takes half as much damage. If damage from this maneuver reduces a creature to 0 hit points, it immediately dies as you rip it apart."
+			]
+		},
+		{
+			"name": "Axolotl's Regeneration",
+			"source": "GrimHollowCarrionRaven",
+			"featureType": [
+				"MV:CR"
+			],
+			"consumes": {
+				"name": "Maneuver Point",
+				"amountMin": 2,
+				"amountMax": 6
+			},
+			"entries": [
+				"You can use a bonus action and spend 2 or 6 maneuver points to regenerate your body. When you do, you regain {@dice 1d12} + your Constitution modifier hit points. If you spent 6 points, you also regrow a lost limb or organ of your choice."
+			]
+		},
+		{
+			"name": "Bestial Transformation",
+			"source": "GrimHollowCarrionRaven",
+			"featureType": [
+				"MV:CR"
+			],
+			"consumes": {
+				"name": "Maneuver Point",
+				"amount": 8
+			},
+			"entries": [
+				"You can use an action and spend 8 maneuver points to cast {@spell polymorph} targeting only yourself without providing material components. However, you can only transform into a beast with a CR of half your level or lower, and you retain your Intelligence, Wisdom, and Charisma scores. Constitution is your spellcasting ability when you cast the spell in this way."
+			]
+		},
+		{
+			"name": "Call of the Beast Lord",
+			"source": "GrimHollowCarrionRaven",
+			"featureType": [
+				"MV:CR"
+			],
+			"consumes": {
+				"name": "Maneuver Point",
+				"amount": 5
+			},
+			"entries": [
+				"You can use an action and spend 5 maneuver points to howl, calling a bestial spirit to your aid. When you do, choose any beast with a CR equal to or less than your level to appear in an unoccupied space of your choice within 60 feet.",
+				"A beast conjured in this way disappears when it is reduced to 0 hit points, after 10 minutes, or when you lose {@status concentration} on this maneuver (as if you were {@status concentration||concentrating} on a spell). The summoned creature is friendly to you and your companions. The creature shares your initiative but takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any commands to the creature, it defends itself from hostile creatures by taking the {@action Dodge} action."
+			]
+		},
+		{
+			"name": "Carrion Feast",
+			"source": "GrimHollowCarrionRaven",
+			"featureType": [
+				"MV:CR"
+			],
+			"consumes": {
+				"name": "Maneuver Point",
+				"amount": 4
+			},
+			"entries": [
+				"You can use an action and spend 4 maneuver points to feast on an enemy's waning life. When you use this maneuver, make a melee weapon attack. On a hit, the attack deals an additional {@damage 5d6} necrotic damage and you gain temporary hit points equal to the necrotic damage dealt."
+			]
+		},
+		{
+			"name": "Falcon's Glide",
+			"source": "GrimHollowCarrionRaven",
+			"featureType": [
+				"MV:CR"
+			],
+			"consumes": {
+				"name": "Maneuver Point",
+				"amount": 1
+			},
+			"entries": [
+				"When you fall, you can use your reaction and spend 1 maneuver point to slow your fall to 60 feet per round for 1 minute. If you land before this time elapses, you take no falling damage.",
+				"In addition, as a bonus action on each of your turns for the duration of this maneuver, you can spend 1 additional maneuver point to gain a fly speed of 30 feet until the end of the turn."
+			]
+		},
+		{
+			"name": "Feral Fighting",
+			"source": "GrimHollowCarrionRaven",
+			"featureType": [
+				"MV:CR"
+			],
+			"consumes": {
+				"name": "Maneuver Point",
+				"amount": 1
+			},
+			"entries": [
+				"You can use a bonus action and spend 1 maneuver point to fight with beastlike fury. When you do, make a single unarmed strike against a creature. On a hit, you can roll {@dice 1d8} in place of the normal damage of your unarmed strike."
+			]
+		},
+		{
+			"name": "Hibernating Bear Recuperation",
+			"source": "GrimHollowCarrionRaven",
+			"featureType": [
+				"MV:CR"
+			],
+			"consumes": {
+				"name": "Maneuver Point",
+				"amount": 5
+			},
+			"entries": [
+				"You can spend an action and 5 maneuver points to put yourself into a deep and restful sleep for the next 10 minutes. During this time you have resistance to all damage except psychic and, when you take damage, you can choose to remain asleep or wake up. If you sleep for the entire 10 minutes, you gain the benefits of having completed a short rest, immediately end any poison affecting you, and lose one level of {@condition exhaustion}.",
+				"At the end of this sleep, you can spend and roll any number of Hit Die, adding your Constitution modifier to each Hit Die rolled, gaining temporary hit points equal to the total."
+			]
+		},
+		{
+			"name": "Pack Leader",
+			"source": "GrimHollowCarrionRaven",
+			"featureType": [
+				"MV:CR"
+			],
+			"consumes": {
+				"name": "Maneuver Point",
+				"amount": 1
+			},
+			"entries": [
+				"When an enemy creature within 5 feet of you is attacked, you can use your reaction and spend 1 maneuver point to make a melee attack at the same enemy creature. When you do, the triggering attack has advantage."
+			]
+		},
+		{
+			"name": "Predator's Howl",
+			"source": "GrimHollowCarrionRaven",
+			"featureType": [
+				"MV:CR"
+			],
+			"consumes": {
+				"name": "Maneuver Point",
+				"amount": 2
+			},
+			"entries": [
+				"You can use a bonus action and spend 2 maneuver points to emit a terrifying howl. Two creatures of your choice within 30 feet of you must make a Wisdom saving throw. On a failed save, the creature is {@condition frightened} until the start of your next turn. Each time the {@condition frightened} creature takes damage from weapon attacks, they take an additional {@damage 1d6} psychic damage."
+			]
+		},
+		{
+			"name": "Shape of the Behemoth",
+			"source": "GrimHollowCarrionRaven",
+			"featureType": [
+				"MV:CR"
+			],
+			"consumes": {
+				"name": "Maneuver Point",
+				"amount": 3
+			},
+			"entries": [
+				"As an action you can spend 3 maneuver points to embody the power of nature's largest beasts for 1 minute. When you do, your size increases by one category to a maximum size of Large. In addition, for the duration your reach increases by 5 feet, your weapon attacks deal an additional {@damage 1d6} damage, and you gain {@dice 1d6} temporary hit points at the start of each of your turns. This maneuver ends early if you lose {@status concentration} (as if you were {@status concentration||concentrating} on a spell)."
+			]
+		},
+		{
+			"name": "Slippery Otter",
+			"source": "GrimHollowCarrionRaven",
+			"featureType": [
+				"MV:CR"
+			],
+			"consumes": {
+				"name": "Maneuver Point",
+				"amount": 1
+			},
+			"entries": [
+				"You can use a bonus action and spend 1 maneuver point to embody the grace and endurance of an otter in water. For the next hour, you have a swimming speed of 30 feet and can hold your breath for a number of minutes equal to twice your Constitution ability score. While in the water, you can take the {@action Dash} action as a bonus action."
+			]
+		},
+		{
+			"name": "Snout of the Bloodhound",
+			"source": "GrimHollowCarrionRaven",
+			"featureType": [
+				"MV:CR"
+			],
+			"consumes": {
+				"name": "Maneuver Point",
+				"amount": 1
+			},
+			"entries": [
+				"You take a minute and spend a maneuver point to attune your senses to your surroundings, enhancing your senses of smell, sight, and hearing for the next hour. During this time, you gain the following benefits:",
+				"You have advantage on Wisdom ({@skill Perception}) and Wisdom ({@skill Survival}) checks to track You add your proficiency bonus to initiative checks You do not have disadvantage on attack rolls against {@condition invisible} creatures Stoic Oxen Spirit (2 points) When you become {@condition charmed} or {@condition frightened}, you can use your reaction and spend 2 maneuver points to immediately end the triggering {@condition charmed} or {@condition frightened} condition. In addition, you have advantage on attack rolls against the creature who attempted to charm or frighten you until the end of your next turn."
+			]
+		},
+		{
+			"name": "Trampling Bull",
+			"source": "GrimHollowCarrionRaven",
+			"featureType": [
+				"MV:CR"
+			],
+			"consumes": {
+				"name": "Maneuver Point",
+				"amount": 3
+			},
+			"entries": [
+				"You can use a bonus action and spend 3 maneuver points to channel the charging bull, moving up to your speed. While moving this way, you can move through the space of creatures of your size or smaller, but you must end your movement in an unoccupied space.",
+				"Each creature whose space you moved through must succeed on a Strength saving throw or be knocked {@condition prone} and take bludgeoning damage equal to {@dice 1d8} + your Strength modifier."
+			]
+		},
+		{
+			"name": "Tusks of the Rampaging Mammoth",
+			"source": "GrimHollowCarrionRaven",
+			"featureType": [
+				"MV:CR"
+			],
+			"consumes": {
+				"name": "Maneuver Point",
+				"amount": 3
+			},
+			"entries": [
+				"You can use an action and spend 3 maneuver points to strike an enemy with the overwhelming force of a rampaging mammoth. When you do, make a melee weapon attack against a creature within 5 feet. On a hit, you deal {@damage 3d12} damage in addition to your attack's normal damage. If the creature is Huge or smaller, you push the creature 15 feet."
+			]
+		},
+		{
+			"name": "Woolly Beast's Hide",
+			"source": "GrimHollowCarrionRaven",
+			"featureType": [
+				"MV:CR"
+			],
+			"entries": [
+				"When you are hit by an attack, you can use your reaction and spend 2 or more maneuver points to use the resilient parts of your body to shield your vulnerabilities from harmful damage. When you use this maneuver, roll {@dice 1d6} for every 2 points you spend to use this maneuver and reduce the damage from an attack by the result. After taking any remaining damage, you also gain temporary hit points equal to the result of the roll."
+			]
+		}
+	]
+}
