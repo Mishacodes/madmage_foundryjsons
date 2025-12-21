@@ -26,7 +26,8 @@
 			"MV:UF": "Maneuver: Undying Flame",
 			"MV:NW": "Maneuver: North Wind",
 			"MV:DE": "Maneuver: Dark Envoy",
-			"MV:LB": "Maneuver: Living Blade", 
+			"MV:LB": "Maneuver: Living Blade",
+            "MV:BM": "Maneuver: Burning Mind",
 			"MV:Leg": "Maneuver: Legendary"
 			
 		},
@@ -52,7 +53,9 @@
 						"MV:UF",
 						"MV:NW",
 						"MV:DE",
-						"MV:LB"
+						"MV:LB",
+                        "MV:BM"
+
 					],
 					"progression": {
 						"3": 2,
@@ -73,7 +76,7 @@
 					"colLabels": [
 						"Bard Levels",
 						"Maneuver Points",
-						"{@filter Maneuvers Known|optionalfeatures|feature type=MV:BB;MV:CR;MV:DV;MV:DL;MV:UF;MV:NW;MV:DE;MV:LB|source=GrimHollowCollegeOfLegends}"
+						"{@filter Maneuvers Known|optionalfeatures|feature type=MV:BB;MV:CR;MV:DV;MV:DL;MV:UF;MV:NW;MV:DE;MV:LB;MV:BM|source=GrimHollowCollegeOfLegends}"
 					],
 					"rows": [
 						[
@@ -786,6 +789,31 @@
 				]
 			}
 		},
+        {
+			"name": "Undying Flame: Stirring Command",
+			"source": "GrimHollowCollegeOfLegends",
+			"featureType": [
+				"MV:UF"
+			],
+			"consumes": {
+				"name": "Maneuver Point",
+				"amount": 1
+			},
+			"entries": [
+				"You can spend 1 maneuver point as a bonus action to issue a command to strike. Choose one ally within 30 feet who can hear you. That ally can immediately use their reaction to makke one melee or ranged attack against an enemy."
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wow.zamimg.com/images/wow/icons/large/ability_blackhand_marked4death.jpg"
+						}
+					}
+				]
+			}
+		},
 		{
 			"name": "Dark Envoy: Flickering Shadow Evasion",
 			"source": "GrimHollowCollegeOfLegends",
@@ -985,6 +1013,83 @@
 						"href": {
 							"type": "external",
 							"url": "https://wow.zamimg.com/images/wow/icons/large/spell_mage_unstablemagic.jpg"
+						}
+					}
+				]
+			}
+		},
+        {
+			"name": "Divine Vessel: Impelled Attack",
+			"source": "GrimHollowCollegeOfLegends",
+			"featureType": [
+				"MV:DV"
+			],
+			"consumes": {
+				"name": "Maneuver Point",
+				"amount": 1
+			},
+			"entries": [
+				"Blood guides your hand. As a bonus action, you can spend 1 maneuver point and make one weapon attack."
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wow.zamimg.com/images/wow/icons/large/inv_1115_warrior_fastermeleeattacks.jpg"
+						}
+					}
+				]
+			}
+		},
+        {
+			"name": "Burning Mind: Sól Valtiva",
+			"source": "GrimHollowCollegeOfLegends",
+			"featureType": [
+				"MV:BM"
+			],
+			"consumes": {
+				"name": "Maneuver Point",
+				"amount": 10
+			},
+			"entries": [
+				"You ignite your weapon with the fires of the sun. As a bonus action, you spend 10 maneuver points to activate this maneuver for up to 1 minute.", 
+                "While this maneuver is active, your weapon casts bright light for 60 feet and dim light for 60 feet beyond that. Your weapon also deals an additional 2d6 radiant damage and 2d6 fire damage on a hit, growing brighter with every strike.",
+                "After you have dealt at least 100 damage with your weapon, it burns with an unbelievable intensity until the maneu- ver ends. While the maneuver is still active, the next time you hit a creature that has 100 hit points or less, you can choose to reduce the creature to 0 hit points rather than roll damage and immediately end this maneuver."
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wow.zamimg.com/images/wow/icons/large/achievment_raid_houroftwilight.jpg"
+						}
+					}
+				]
+			}
+		},
+        {
+			"name": "Dying Light: Bloodthirsty Strike",
+			"source": "GrimHollowCollegeOfLegends",
+			"featureType": [
+				"MV:DL"
+			],
+			"consumes": {
+				"name": "Maneuver Point",
+				"amount": 4
+			},
+			"entries": [
+				"You can use an action and spend 4 maneuver points to feast on the spilled blood of an enemy. When you use this maneuver, make one melee weapon attack. On a hit, the attack deals an additional 5d6 nectrotic damage and you gain hit points equal to the necrotic damage dealt."
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://wow.zamimg.com/images/wow/icons/large/spell_deathknight_bloodpresence.jpg"
 						}
 					}
 				]
