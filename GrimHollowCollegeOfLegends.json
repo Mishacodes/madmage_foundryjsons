@@ -27,8 +27,7 @@
 			"MV:NW": "Maneuver: North Wind",
 			"MV:DE": "Maneuver: Dark Envoy",
 			"MV:LB": "Maneuver: Living Blade",
-            "MV:BM": "Maneuver: Burning Mind",
-			"MV:Leg": "Maneuver: Legendary"
+            "MV:BM": "Maneuver: Burning Mind"
 			
 		},
 		"edition": "classic",
@@ -183,7 +182,10 @@
 				}
 			],
 			"subclassFeatures": [
-				"College of Legends|Bard||Legends|GrimHollowCollegeOfLegends|3",
+				"Martial Maneuvers|Bard||Legends|GrimHollowCollegeOfLegends|3",
+				"Maneuver Points|Bard||Legends|GrimHollowCollegeOfLegends|3",
+				"Creating Maneuver Points|Bard||Legends|GrimHollowCollegeOfLegends|3",
+				"Many Stories Inspiration|Bard||Legends|GrimHollowCollegeOfLegends|3",
 				"Saga Savant|Bard||Legends|GrimHollowCollegeOfLegends|6",
 				"Legendary Prowess|Bard||Legends|GrimHollowCollegeOfLegends|14"
 			],
@@ -196,48 +198,10 @@
 			"shortName": "Legends",
 			"source": "GrimHollowCollegeOfLegends",
 			"className": "Bard",
-			"classSource": "PHB",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://i.imgur.com/U8P7uC8.png"
-					}
-				}
-			]
+			"classSource": "PHB"
 		}
 	],
 	"subclassFeature": [
-		{
-			"name": "College of Legends",
-			"source": "GrimHollowCollegeOfLegends",
-			"className": "Bard",
-			"classSource": "PHB",
-			"subclassShortName": "Legends",
-			"subclassSource": "GrimHollowCollegeOfLegends",
-			"level": 3,
-			"entries": [
-				"Bards of this college study the Lord Edda, which holds the sagas of Valika's ancient heroes and can harness these legendary spirits to enhance the abilities of their allies. These bards pursue the mastery of storytelling as an art form to inspire their companions to emulate these legends.",
-				"When the bards of this college arten't counseling their companions with wisdom from the Lord Edda, they often adventure to recover lost artifacts from those stories or investigate the alleged locations of the beloved sagas. These bards don't try to reconcile the truth that the lessons of some of the sagas contradict each other. For them, the apparent contradictions are just another facet of the wisdom that can be gleaned by studying the legends.",
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Martial Maneuvers|Bard||Legends|GrimHollowCollegeOfLegends|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Maneuver Points|Bard||Legends|GrimHollowCollegeOfLegends|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Creating Maneuver Points|Bard||Legends|GrimHollowCollegeOfLegends|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Many Stories Inspiration|Bard||Legends|GrimHollowCollegeOfLegends|3"
-				}
-			]
-		},
 		{
 			"name": "Martial Maneuvers",
 			"source": "GrimHollowCollegeOfLegends",
@@ -249,21 +213,7 @@
 			"header": 2,
 			"entries": [
 				"You have trained in the manner of heroes from the old sagas, and now you can perform certain martial maneuvers. A maneuver requires you to spend maneuver points to use it.",
-				"You know two martial maneuvers of your choice from any other subclass with this feature. You learn an additional maneuver at 6th and 14th level. Each time you learn a maneuver, you can also replace one maneuver you know with a different one you can learn.",
-				{
-					"type": "entries",
-					"name": "Using Maneuvers",
-					"entries": [
-						"You can use one maneuver during each turn. Some maneuvers require {@status concentration}, as if {@status concentration||concentrating} on a spell, or certain conditions to use. Some maneuvers will require your target to make a saving throw to resist the maneuver's effects.",
-						{
-							"type": "abilityDc",
-							"name": "Martial Maneuver",
-							"attributes": [
-								"cha"
-							]
-						}
-					]
-				}
+				"You know two martial maneuvers of your choice from any other subclass with this feature. You learn an additional maneuver at 6th and 14th level. Each time you learn a maneuver, you can also replace one maneuver you know with a different one you can learn."
 			]
 		},
 		{
@@ -322,7 +272,7 @@
 			"level"	: 6,
 			"header": 2,
 			"entries": [
-				"When you aren't telling stories of legendary heroes, you're rehearsing the next retelling. You learn two maneuvers of your choice. These do not count against your maximum number of maneuvers known. Each time you finish a long rest, you can replace one of the maneuvers you know  as a rusult of this feature with a different maneuver."
+				"When you aren't telling stories of legendary heroes, you're rehearsing the next retelling. You learn two maneuvers of your choice. These do not count against your maximum number of maneuvers known. Each time you finish a long rest, you can replace one of the maneuvers you know  as a result of this feature with a different maneuver."
 			]
 		},
 		{
@@ -339,95 +289,6 @@
 			]
 		}
 	],
-	"foundryOptionalfeature": [
-		{
-			"name": "Blade Breaker: Arcing Iron",
-			"source": "GrimHollowCollegeOfLegends",
-			"entries": [
-				"You swing your weapon in a wide arc, catching additional foes. As a bonus action, you can spend 1 or more maneuver points to empower your next melee attack this turn. When you make that attack, make an additional attack against each additional creature within your reach, spending 1 maneuver point per additional creature targeted."
-			],
-			"activities": [
-				{
-					"activation": {
-						"type": "bonus action"
-					},
-					"range": {
-						"units": "self"
-					},
-					"target": {
-						"affects": {
-							"type": "self"
-						}
-					},
-					"type": "utility",
-					"consumption": {
-						"targets": [
-							{
-								"type": "itemUses",
-								"target": {
-									"consumes": {
-										"name": "Maneuver Points"
-									}
-								},
-								"value": 1,
-								"scaling": {
-									"mode": "amount"
-								}
-							}
-						],
-						"scaling": {
-							"allowed": true,
-							"max": "5"
-						}
-					}
-				}
-			]
-		},
-		{
-			"name": "Carrion Raven: Axolotl's Regeneration",
-			"source": "GrimHollowCollegeOfLegends",
-			"entries": [
-				"You can use a bonus action and spend 2 or 6 maneuver points to regenerate your body. When you do, you regain {@dice 1d12} + your Constitution modifier hit points. If you spent 6 points, you also regrow a lost limb or organ of your choice."
-			],
-			"activities": [
-				{
-					"activation": {
-						"type": "bonus action"
-					},
-					"range": {
-						"units": "self"
-					},
-					"target": {
-						"affects": {
-							"type": "self"
-						}
-					},
-					"type": "utility",
-					"consumption": {
-						"targets": [
-							{
-								"type": "itemUses",
-								"target": {
-									"consumes": {
-										"name": "Maneuver Points"
-									}
-								},
-								"value": 1,
-								"scaling": {
-									"mode": "amount"
-								}
-							}
-						],
-						"scaling": {
-							"allowed": true,
-							"min": "2",
-							"max": "6"
-						}
-					}
-				}
-			]
-		}
-	],
 	"optionalfeature": [
 		{
 			"name": "Blade Breaker: Arcing Iron",
@@ -437,18 +298,7 @@
 			],
 			"entries": [
 				"You swing your weapon in a wide arc, catching additional foes. As a bonus action, you can spend 1 or more maneuver points to empower your next melee attack this turn. When you make that attack, make an additional attack against each additional creature within your reach, spending 1 maneuver point per additional creature targeted."
-			],
-			"fluff": {
-				"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://wow.zamimg.com/images/wow/icons/large/ability_revendreth_shaman.jpg"
-					}
-				}
 			]
-			}
 		},
 		{
 			"name": "Carrion Raven: Axolotl's Regeneration",
@@ -457,24 +307,13 @@
 				"MV:CR"
 			],
 			"consumes": {
-				"name": "Maneuver Points",
+				"name": "Maneuver Point",
 				"amountMin": 2,
 				"amountMax": 6
 			},
 			"entries": [
 				"You can use a bonus action and spend 2 or 6 maneuver points to regenerate your body. When you do, you regain {@dice 1d12} + your Constitution modifier hit points. If you spent 6 points, you also regrow a lost limb or organ of your choice."
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wow.zamimg.com/images/wow/icons/large/sha_spell_warlock_demonsoul_nightmare.jpg"
-						}
-					}
-				]
-			}
+			]
 		},
 		{
 			"name": "Carrion Raven: Carrion Feast",
@@ -488,18 +327,7 @@
 			},
 			"entries": [
 				"You can use an action and spend 4 maneuver points to feast on an enemy's waning life. When you use this maneuver, make a melee weapon attack. On a hit, the attack deals an additional {@damage 5d6} necrotic damage and you gain temporary hit points equal to the necrotic damage dealt."
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wow.zamimg.com/images/wow/icons/large/inv_artifact_corruptedbloodofzakajz.jpg"
-						}
-					}
-				]
-			}
+			]
 		},
 		{
 			"name": "Blade Breaker: Iron Tempest",
@@ -513,18 +341,7 @@
 			},
 			"entries": [
 				"As an action, you can spend 4 maneuver points and make a weapon attack against a creature. Until the end of your turn, whenever you hit with a weapon attack, it deals {@damage 2d6} additional damage and you can make an additional number of attacks equal to your proficiency bonus, but each bonus attack must be against a different target."
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wow.zamimg.com/images/wow/icons/large/ability_hunter_rapidkilling.jpg"
-						}
-					}
-				]
-			}
+			]
 		},
 		{
 			"name": "Carrion Raven: Pack Leader",
@@ -538,18 +355,7 @@
 			},
 			"entries": [
 				"When an enemy creature within 5 feet of you is attacked, you can use your reaction and spend 1 maneuver point to make a melee attack at the same enemy creature. When you do, the triggering attack has advantage."
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wow.zamimg.com/images/wow/icons/large/Spell_hunter_lonewolf.jpg"
-						}
-					}
-				]
-			}
+			]
 		},
 		{
 			"name": "Carrion Raven: Slippery Otter",
@@ -563,18 +369,7 @@
 			},
 			"entries": [
 				"You can use a bonus action and spend 1 maneuver point to embody the grace and endurance of an otter in water. For the next hour, you have a swimming speed of 30 feet and can hold your breath for a number of minutes equal to twice your Constitution ability score. While in the water, you can take the {@action Dash} action as a bonus action."
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wow.zamimg.com/images/wow/icons/large/icon_petfamily_water.jpg"
-						}
-					}
-				]
-			}
+			]
 		},
 		{
 			"name": "Blade Breaker: Wall of Blades",
@@ -610,7 +405,7 @@
 								{
 									"target": {
 										"consumes": {
-											"name": "Maneuver Points"
+											"name": "Maneuver Point"
 										}
 									},
 									"type": "itemUses",
@@ -620,17 +415,6 @@
 						}
 					}
 				]
-			},
-			"fluff": {
-				"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_challange.jpg"
-					}
-				}
-			]
 			}
 		},
 		{
@@ -640,23 +424,12 @@
 				"MV:DV"
 			],
 			"consumes": {
-				"name": "Maneuver Points",
+				"name": "Maneuver Point",
 				"amount": 2
 			},
 			"entries": [
 				"You bless your attack as it strikes, healing allies and dealing extra damage to foes. When you hit a creature with a melee weapon attack, you can spend 2 maneuver points to deal an additional 2d8 radiant damage, and an ally of your choice that you can see within 30 feet of you regains hit points equal to this additional radiant damage."
-			],
-			"fluff": {
-				"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://wow.zamimg.com/images/wow/icons/large/spell_priest_pontifex.jpg"
-					}
-				}
 			]
-			}
 		},
 		{
 			"name": "Dying Light: Final Rapture",
@@ -675,18 +448,7 @@
 				"• You can use your reaction to end any condition on you as soon as you gain it.",
 				"• When you hit a creature with a melee weapon attack, you can end this maneuver early to cause that creature to make a Constitution saving throw. If it fails, it dies. On a success, it takes 10d10 radiant damage.",
 				" When this maneuver ends, you die."
-			],
-			"fluff": {
-				"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://wow.zamimg.com/images/wow/icons/large/ability_revendreth_priest.jpg"
-					}
-				}
 			]
-			}
 		},
 		{
 			"name": "Dying Light: Deflect Magic",
@@ -701,18 +463,7 @@
 			"entries": [
 				"This technique allows you to deflect harmful magic with your bare hands. When you are hit by a ranged spell attack, you can spend 5 maneuver points to attempt to deflect it as a reaction. When you do so, the damage you take from the attack is reduced by {@dice 2d10} + your Dexterity modifier + your level.",
 				"If you reduce the damage to 0, you can catch the spell. If you catch a spell in this way, you take 1d4 damage of the type of damage the spell deals per level of the spell. You can then redirect it, choosing a new target within 30 feet and making an attack roll against them using your Dexterity modifier and proficiency bonus."
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wow.zamimg.com/images/wow/icons/large/spell_deathknight_spelldeflection.jpg"
-						}
-					}
-				]
-			}
+			]
 		},
 		{
 			"name": "Dying Light: Sanguine Charity",
@@ -726,18 +477,7 @@
 			},
 			"entries": [
 				"The pain you feel reassures you that your sinful nature is being purified, giving you the strength to carry on. As a reaction to taking damage, you can spend 2 maneuver points to gain temporary hit points equal to {@dice 1d10} + your level."
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wow.zamimg.com/images/wow/icons/large/artifactability_blooddeathknight_umbilicuseternus.jpg"
-						}
-					}
-				]
-			}
+			]
 		},
 		{
 			"name": "Undying Flame: Heroic Defense",
@@ -751,18 +491,7 @@
 			},
 			"entries": [
 				"When an ally within 5 feet of you is hit with an attack, you can spend 1 maneuver point as a reaction to trade places with them, becoming the new target of the attack and potentially causing the attack to miss if your AC is above the attack roll."
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_victoryrush.jpg"
-						}
-					}
-				]
-			}
+			]
 		},
 		{
 			"name": "Undying Flame: Sword of Light and Flame",
@@ -776,18 +505,7 @@
 			},
 			"entries": [
 				"As an action, spend 3 maneuver points to cause one weapon you hold to erupt with flame for 1 minute. Your weapon casts bright light in a 30-foot radius and dim light a further 30 feet. Choose one creature within 60 feet of you. Each time that creature takes damage within your weapon's light, it takes an additional 1d6 fire damage. Your weapon attacks deal fire damage instead of its normal damage type. Creatures reduced to 0 hit points by any attack benefitting from this additional damage cannot be raised as undead for 1 year."
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wow.zamimg.com/images/wow/icons/large/inv_sword_1h_revenantfire_d_01.jpg"
-						}
-					}
-				]
-			}
+			]
 		},
         {
 			"name": "Undying Flame: Stirring Command",
@@ -801,18 +519,7 @@
 			},
 			"entries": [
 				"You can spend 1 maneuver point as a bonus action to issue a command to strike. Choose one ally within 30 feet who can hear you. That ally can immediately use their reaction to makke one melee or ranged attack against an enemy."
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wow.zamimg.com/images/wow/icons/large/ability_blackhand_marked4death.jpg"
-						}
-					}
-				]
-			}
+			]
 		},
 		{
 			"name": "Dark Envoy: Flickering Shadow Evasion",
@@ -826,18 +533,7 @@
 			},
 			"entries": [
 				"When you are hit by a melee attack, you can use your reaction to spend 2 maneuver points and flicker away. Use this action to make a Dexterity (Stealth) check. If the result is higher than the creature's attack roll against you, the attack misses, and you can teleport up to 10 feet to an unoccupied space that you can see."
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wow.zamimg.com/images/wow/icons/large/sha_ability_rogue_envelopingshadows.jpg"
-						}
-					}
-				]
-			}
+			]
 		},
 		{
 			"name": "Dark Envoy: Shadow Striking Technique",
@@ -851,18 +547,7 @@
 			},
 			"entries": [
 				"You can use a bonus action and spend 2 maneuver points to bind a shadow to your weapon. For the next 10 minutes, your attacks with this weapon deal an additional 1d8 necrotic damage and its reach increases by 5 feet."
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_focusedattacks.jpg"
-						}
-					}
-				]
-			}
+			]
 		},
 		{
 			"name": "Dark Envoy: Hail of Needles",
@@ -876,18 +561,7 @@
 			},
 			"entries": [
 				"You can use an action and spend 5 maneuver points to cause nearby shadows to coalesce into a swarm of needles and rain down on your enemies. Choose a point within 90 feet. Creatures within 10 feet of the chosen point must make a Dexterity saving throw. This saving throw is made with disadvantage if the creature is in dim light or darkness. The creature takes {@damage 5d10} piercing damage on a failed save or half as much damage on a successful one."
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_firestorm.jpg"
-						}
-					}
-				]
-			}
+			]
 		},
 		{
 			"name": "Dark Envoy: Shape of Darkness",
@@ -904,18 +578,7 @@
 				"• You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet.",
 				"• You have resistance to nonmagical bludgeoning, piercing, and slashing damage.",
 				"• While you are in dim light or darkness, each turn you can use a bonus action to teleport to an unoccupied spacewithin 30 feet that is also in dim light or darkness."
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wow.zamimg.com/images/wow/icons/large/spell_deathknight_defile.jpg"
-						}
-					}
-				]
-			}
+			]
 		},
 		{
 			"name": "Living Blade: Phaseshift Strike",
@@ -930,18 +593,7 @@
 			"entries": [
 				"Unleash a blow that temporarily knocks an enemy out of phase with the material plane. When you hit a creature with a melee weapon attack, you can spend 4 maneuver points to deal an additional {@dice 4d6} force damage to the target creature, and they are also knocked into another dimension, reappearing 15 feet directly away from you. They must make a Dexterity saving throw with disadvantage when they reappear or fall prone.",
 				"If a creature teleported by this maneuver reappears inside solid material, such as within the wall of a cave, they take an additional {@dice 3d10} force damage and are instantly shunted to the nearest available space."
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_stretchtime.jpg"
-						}
-					}
-				]
-			}
+			]
 		},
 		{
 			"name": "Living Blade: Spacecleave",
@@ -955,18 +607,7 @@
 			},
 			"entries": [
 				"Your weapon splits the facbric of space itself, allowing you to conjure an ally through the tear it leaves behind. When you hit a creature with a melee weapon attack, you can spend 3 maneuver points to target one Large or smaller ally within 60 feet and teleport them to an empty space within 10 feet of you. The allied creature can then make one melee attack with advantage."
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wow.zamimg.com/images/wow/icons/large/ability_priest_empyrealblaze.jpg"
-						}
-					}
-				]
-			}
+			]
 		},
 		{
 			"name": "Living Blade: Quantum Exchange",
@@ -980,18 +621,7 @@
 			},
 			"entries": [
 				"As an action, you can spend 2 maneuver points to magically reach out with your mind and switch the dimensional properties of two of your allies. Two allied creatures you can see within 30 feet swap positions."
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wow.zamimg.com/images/wow/icons/large/ability_evoker_innatemagic4.jpg"
-						}
-					}
-				]
-			}
+			]
 		},
 		{
 			"name": "Living Blade: Sunder Spell",
@@ -1005,18 +635,7 @@
 			},
 			"entries": [
 				"This maneuver allows you to destroy magical effects with your weapon. When you hit a creature or an object with a melee weapon attack, you can spend 3 maneuver points to end one spell of 3rd level or lower on the target. To attempt to end a spell of 4th level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a successful check, the spell ends."
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wow.zamimg.com/images/wow/icons/large/spell_mage_unstablemagic.jpg"
-						}
-					}
-				]
-			}
+			]
 		},
         {
 			"name": "Divine Vessel: Impelled Attack",
@@ -1030,18 +649,7 @@
 			},
 			"entries": [
 				"Blood guides your hand. As a bonus action, you can spend 1 maneuver point and make one weapon attack."
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wow.zamimg.com/images/wow/icons/large/inv_1115_warrior_fastermeleeattacks.jpg"
-						}
-					}
-				]
-			}
+			]
 		},
         {
 			"name": "Burning Mind: Sól Valtiva",
@@ -1057,24 +665,13 @@
 				"You ignite your weapon with the fires of the sun. As a bonus action, you spend 10 maneuver points to activate this maneuver for up to 1 minute.", 
                 "While this maneuver is active, your weapon casts bright light for 60 feet and dim light for 60 feet beyond that. Your weapon also deals an additional 2d6 radiant damage and 2d6 fire damage on a hit, growing brighter with every strike.",
                 "After you have dealt at least 100 damage with your weapon, it burns with an unbelievable intensity until the maneu- ver ends. While the maneuver is still active, the next time you hit a creature that has 100 hit points or less, you can choose to reduce the creature to 0 hit points rather than roll damage and immediately end this maneuver."
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wow.zamimg.com/images/wow/icons/large/achievment_raid_houroftwilight.jpg"
-						}
-					}
-				]
-			}
+			]
 		},
         {
 			"name": "Dying Light: Bloodthirsty Strike",
 			"source": "GrimHollowCollegeOfLegends",
 			"featureType": [
-				"MV:DL"
+				"MV:BM"
 			],
 			"consumes": {
 				"name": "Maneuver Point",
@@ -1082,18 +679,7 @@
 			},
 			"entries": [
 				"You can use an action and spend 4 maneuver points to feast on the spilled blood of an enemy. When you use this maneuver, make one melee weapon attack. On a hit, the attack deals an additional 5d6 nectrotic damage and you gain hit points equal to the necrotic damage dealt."
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://wow.zamimg.com/images/wow/icons/large/spell_deathknight_bloodpresence.jpg"
-						}
-					}
-				]
-			}
+			]
 		}
 	]
 }
